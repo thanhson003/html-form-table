@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form dang ky</title>
+    <style>
+        .tieude {
+            background-color: #baedd5;
+            color: blue;
+        }
+        .name{
+            color: #3437da;
+        }
+        body{
+            background-color: #e8e89c;
+        }
+        .button{
+            margin-left: 73px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tieude" colspan="2"><h2>DANG KY HOC VIEN</h2></div>
+    <table>
+        <tr>
+                <td class="name">Ho va ten</td>
+                <td><input type="text" name="hoten"></td>
+        </tr>
+        <tr>
+            <td class="name">Ngay sinh</td>
+            <td><input type="text" name="ngaysinh"></td>
+        </tr>
+        <tr>
+            <td class="name">Gioi tinh</td>
+            <td><input type="radio" name="gender" value="Nam" >Nam
+            <input type="radio" name="gender" value="Nu" >Nu</td>
+        </tr>
+        <tr>
+            <td class="name">Dia chi</td>
+            <td><textarea  cols="25" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td class="name">Lop</td>
+            <td>
+                <select name="lop">
+                    <option value="Chon lop">Chon lop</option>
+                    <option value="nganh">nganh</option>
+                    <option value="ngay">ngay</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td class="name">Dien thoai</td>
+            <td><input type="text" name="number"></td>
+        </tr>
+    </table>
+    <div class="button">
+        <input type="submit" value="Dang ky">
+        <input type="reset" value="Nhap lai">
+    </div>
+</body>
+</html>
