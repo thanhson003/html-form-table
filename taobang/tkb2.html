@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            text-align: center;
+        }
+        .section{
+            display: flex;
+            /*cho phép điều khiển vị trí và kích thước các item bên trong*/
+            justify-content: space-between;
+            /*căn chỉnh các item: item đầu sang sát mét trái, item cuối cùng sang sát mép phải, các item giữa cách đều */
+            margin-bottom: 10px;
+            color: #4169E1;
+            font-size: 16px;
+        }
+        .left{
+            text-align: left;
+            color: #4169E1;
+        }
+
+        .demuc{
+            color: blue;
+        }
+        table{
+            width: 100%;
+        }
+        .day{
+            background-color: yellow;
+            text-align: center;
+        }
+        .mon{
+            text-align: center;
+        }
+        .hang2{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="demuc">
+        <h1>THỜI KHÓA BIỂU</h1>
+    </div>
+    <div class="section">
+        <div class="left">
+            <p>Lớp: T0908i</p>
+            <p>Giáo viên: KhoaNV</p>
+            <p>Phòng học: Class3/Lab3</p>
+
+        </div>
+        <div class="right">
+            <p>Thời gian học: 13h30 - 17h30</p>
+            <p>Ngày học: Thứ 3,5,7</p>
+        </div>
+    </div>
+    <table border="1">
+        <tr>
+            <td colspan="3"></td>
+            <td class="day">Thứ 3</td>
+            <td class="day">Thứ 5</td>
+            <td class="day">Thứ 7</td>
+        </tr>
+        <tr>
+            <td><div class="hang2">Tuần</div></td>
+            <td><div class="hang2">Ngày bắt đầu</div></td>
+            <td><div class="hang2">Ngày kết thúc</div></td>
+            <td colspan="3" class="mon"><div class="hang2">Môn học</div></td>
+        </tr>
+        <tr>
+            <td class="mon">01</td>
+            <td><label><input type="date" name="time"></label></td>
+            <td><label><input type="date" name="time"></label></td>
+            <td>CF - T1,L1</td>
+            <td>CF - T2,L2</td>
+            <td>CF - T3,L3</td>
+        </tr>
+        <tr>
+            <td class="mon">02</td>
+            <td><label><input type="date" name="time"></label></td>
+            <td><label><input type="date" name="time"></label></td>
+            <td>CF - T4,L4</td>
+            <td>CF - Written Test</td>
+            <td>C - T1,L1</td>
+        </tr>
+    </table>
+</body>
+</html>
